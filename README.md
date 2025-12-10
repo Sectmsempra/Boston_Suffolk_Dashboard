@@ -65,28 +65,6 @@ Each variable is assigned a direction indicating whether “higher is better” 
 
 These directions are used when normalizing metrics and computing the composite score.
 
-### Normalization
-
-To combine variables measured in different units (USD, counts, percentages), each metric is normalized to a 0–1 scale across all 28 ZIPs:
-
-- For metrics where **higher is better** (e.g., income):
-  
-  \[
-  x' = \frac{x - \min(x)}{\max(x) - \min(x)}
-  \]
-
-- For metrics where **lower is better** (e.g., crime, rent, population):
-
-  1. First invert the scale so that “better” is higher:
-     \[
-     x_{\text{inv}} = \max(x) - x
-     \]
-  2. Then apply the same min–max normalization:
-     \[
-     x' = \frac{x_{\text{inv}} - \min(x_{\text{inv}})}{\max(x_{\text{inv}}) - \min(x_{\text{inv}})}
-     \]
-
-This ensures that for all normalized metrics \( x' \in [0, 1] \), **higher means better**.
 
 ### Composite Score
 
