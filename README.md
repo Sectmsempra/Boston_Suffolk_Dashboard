@@ -78,17 +78,6 @@ Weights are:
 - Housing (inverse) → 20%
 - Population (inverse, as density) → 10%
 
-Formally:
-
-\[
-\text{score\_index} = 100 \times \Big(
-0.25 \cdot I' +
-0.25 \cdot C' +
-0.20 \cdot E' +
-0.20 \cdot H' +
-0.10 \cdot D'
-\Big)
-\]
 
 Where:
 
