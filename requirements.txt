@@ -1,0 +1,10 @@
+# Core dependencies for Boston Neighborhood Analytics Dashboard
+streamlit==1.52.1
+streamlit-plotly-events==0.0.6
+pandas==2.3.3
+plotly==6.5.0
+numpy==2.3.5
+geopandas==1.1.1
+shapely==2.1.2
+python-dotenv==1.2.1
+requests==2.32.5
